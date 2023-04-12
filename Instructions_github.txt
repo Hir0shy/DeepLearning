@@ -1,0 +1,31 @@
+"Gitの説明"
+1. GitHubにログインしリポジトリを作成
+GitHubのサイトで「New repository」をクリック
+「Repository name」にリポジトリ名を、「Description」にリポジトリの内容を入力し、「Create repository」をクリック
+登録が完了するとURLが表示されるので、HTTPSのURLをコピーする
+
+2. ローカル環境にローカルリポジトリを作る
+<linuxの場合>
+ディレクトリを作成
+$ mkdir github
+$ cd github
+$ mkdir pushtest
+$ cd pushtest
+作成したら、ローカルリポジトリを作成
+$ git init
+以下のように表示されれば成功！
+Initialized empty Git repository in ~
+
+3. ファイルをローカルリポジトリに登録
+ファイルを新規に作成してローカルリポジトリに作成する
+$ vi pushtest.txt または $ touch pushtest.txt
+内容：push test!
+ファイルを作成したら、ファイルをインデックスに追加する
+インデックスに追加することでGitで管理する対象のファイルになる
+$ git add pushtest.txt
+次に、リポジトリに登録
+$ git commit -m "pushコマンドの確認"
+
+4. リモートリポジトリにpushする
+$ git push origin master
+

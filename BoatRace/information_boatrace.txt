@@ -1,0 +1,11 @@
+Position,Lane,Register,Name,Motor,Boat,Tenji,Entry,Start,Time,Place,Round,RaceType,
+
+
+
+
+目的変数：着順
+
+まず1位かそれ以外かの2値分類
+艇番,選手登番,年齢,支部,体重
+
+TXTtoCSV_timetable,result.pyを1年分ごとにcsvファイルに変換するようにする
